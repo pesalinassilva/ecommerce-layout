@@ -1,0 +1,128 @@
+.layout {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-areas:
+    "menu menu"
+    "categoria productos"
+    "contacto contacto";
+    gap: 10px;
+    background-color: rgb(232, 230, 230);
+    font-family: "Nunito Sans";
+}
+
+.menu-nav{
+    grid-area: menu;
+    background-color: rgb(52, 87, 183);
+    text-align: center;
+    color: white;
+    font-family: "Nunito Sans";
+    font-weight: 500;
+    padding: 15px;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-nav a:hover{
+    color: rgb(184, 169, 143);
+}
+
+.categoria{
+    grid-area: categoria;
+    height: 100vh;
+    padding-top: 1rem;
+    /*width: 10vw;*/
+}
+
+.categoria menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.categoria ul{
+    list-style: none;
+    padding: 0;
+}
+
+.categoria li{
+    padding: 5px;
+}
+
+.categoria li span{
+    color: rgb(146, 146, 146);
+}
+
+.categoria h2{
+    margin-top: 0;
+    font-weight: bold;
+
+}
+
+.categoria ul{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.productos{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 2rem;
+    gap: 10px;
+    /*width: 90vw;*/
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    flex-grow: 1;
+    background-color: white;
+}
+
+.name h3{
+    margin: 0 ;
+    padding: 10px;
+}
+
+.price p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.buy{
+    width: 100%;
+}
+
+.buy button{
+    border: none;
+    background-color: rgb(52, 87, 183);
+    color: white;
+    width: 100%;
+    height: 3em;
+}
+
+.buy button:hover{
+    background-color: rgb(46, 77, 161);
+}
+
+.buy button:active{
+    background-color: rgb(95, 117, 180);
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: contacto;
+    background-color: white;
+    height: 5vh;
+}
